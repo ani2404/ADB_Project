@@ -1,0 +1,17 @@
+{
+  "name": "e_prescription",
+  "version": "1.0.0",
+  "description": "project to demonstrate riak features",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app/index.js"
+  },
+  "author": "ani2404",
+  "license": "ISC",
+  "dependencies": {
+    "basho-riak-client": "^2.3.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0"
+  }
+}
