@@ -1,27 +1,41 @@
 <html>  
   <head>
     <title>Portal Login</title>
-	<link rel="stylesheet" type="text/css" href="/login/client/login.css">
+    <link rel="stylesheet" type="text/css" href="/login/client/css/login.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/login/client/client.js"></script>
+    <script src="/login/client/js/client.js"></script>
   </head>
   <body>
     <div class="login-page">
-  <div class="form">
-    <form class="register-form" id="register-form">
-      <input type="text" placeholder="name"/>
-      <input type="password" placeholder="password"/>
-      <input type="text" placeholder="email address"/>
-      <button id="register_button">create</button>
-      <p class="message">Already registered? <a href="#" id="signin_link">Sign In</a></p>
-    </form>
-    <form class="login-form" id="login-form">
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
-      <button id="login_button">login</button>
-      <p class="message">Not registered? <a href="#" id="register_link">Create an account</a></p>
-    </form>
-  </div>
-</div>
+      <div class="form">
+        <form class="register-form" id="register-form">
+          <caption>REGISTER</caption>
+          </br>
+          <input type="text" placeholder="name" required/>
+          <input type="password" placeholder="password" required/>
+          <input type="text" placeholder="email address" required/>
+          <div class="styled-select">
+            <select requried>
+              <option>Type of User</option>
+              <option>Doctor</option>
+              <option>Patient</option>
+              <option>Pharmacist</option>
+            </select>
+          </div>
+          </br>
+          </br>
+          <button id="register_button">create</button>
+          <p class="message">Already registered? <a href="#" id="signin_link">Sign In</a></p>
+        </form>
+        <form class="login-form" id="login-form">
+          <caption>LOGIN</caption>
+          </br>
+          <input type="text" placeholder="username" required/>
+          <input type="password" placeholder="password" required/>
+          <button id="login_button">login</button>
+          <p class="message">Not registered? <a href="#" id="register_link">Create an account</a></p>
+        </form>
+      </div>
+    </div>
   </body>
 </html>  
