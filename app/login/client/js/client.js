@@ -17,12 +17,17 @@ $(document).ready(function() {
 
     $("#login_button").click(function(){
        // alert("button");
-       $.post('/login')
+			 $.post('/login', $("#login-form").serialize(),function(data) {
+    })
     });
 
     $("#register_button").click(function(){
        // alert("button");
-       $.post('/register')
+       $.post('/register', $("#register-form").serialize(),function(data){
+
+			 })
     });
+
+
 
 });

@@ -4,8 +4,8 @@ var Riak = require('basho-riak-client');
 
 // List of nodes
 var nodes = [
-    '192.168.0.17:8098',
-    '192.168.0.17:8087'
+    '10.136.16.206:8098',
+    '10.136.16.206:8087'
 ];
 var client = new Riak.Client(nodes, function (err, c) {
     // NB: at this point the client is fully initialized, and
@@ -17,7 +17,7 @@ client.ping(function (err, rslt) {
         throw new Error(err);
     } else {
         // On success, ping returns true
-        console.log('Pong');
+        console.log('Riak database connected successfully');
        // assert(rslt === true);
     }
 });
@@ -25,4 +25,3 @@ client.ping(function (err, rslt) {
 
 
 //module.exports.ping = client.ping
-

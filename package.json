@@ -11,7 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "basho-riak-client": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "connect": "^3.5.0",
+    "ejs": "^2.5.3",
     "express": "^4.14.0",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "flash": "^1.1.0",
+    "formidable": "^1.0.17",
+    "multer": "^1.2.0",
+    "passport": "^0.3.2"
   }
 }

@@ -33,7 +33,7 @@ module.exports.path = path;
 
 //Import all modules
 require('./login/login')
-require('./doctor/doctor')
-require('./patient/patient')
-require('./pharmacist/pharmacist')
+require('./login/doctor')
+require('./login/patient')
+require('./login/pharmacist')
 require('./database_setup')
